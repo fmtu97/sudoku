@@ -1,0 +1,112 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+html{
+    background-color: azure;
+}
+
+.container{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.header{
+    margin: 0;
+    background-color: lightskyblue;
+    width: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: paleturquoise;
+}
+
+.header .title{
+    padding-left: 20px;
+}
+
+.grid-container{
+    margin: 0 auto;
+    padding: 33px 0;
+    width: 507px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.sub-grid{
+    display: grid;
+    margin: 0;
+    width: 169px;
+    height: 169px;
+    grid-template-columns: auto auto auto;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.grid-item{
+    text-align: center;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin: 0;
+    background-color: coral;
+    border: 1px solid black;
+    box-sizing: border-box;
+    line-height: 55px;
+    font-size: 25px;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+.select-grid{
+    margin: 0 auto;
+    width: 550px;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px 20px;
+}
+
+.select-item{
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 50px;
+    background-color: cornflowerblue;
+    width: 90px;
+    height: 60px;
+    line-height: 60px;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+    font-size: 30px;
+}
+
+.control-grid{
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 520px;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px 20px;
+}
+
+.control-item{
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 50px;
+    background-color: cornflowerblue;
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+    font-size: 25px;
+}

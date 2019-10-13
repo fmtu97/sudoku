@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Sudoku</title>
+    <meta content="Made in 5 hours 2019/10/11." name="description">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Sudoku</h1>
+        </div>
+        <div class="main">
+            <div class="grid-container">
+                <div class="sub-grid">
+                    <div class="grid-item" id="g11" onclick="clickOnItem(1,1)">0</div>
+                    <div class="grid-item" id="g12" onclick="clickOnItem(1,2)">0</div>
+                    <div class="grid-item" id="g13" onclick="clickOnItem(1,3)">0</div>
+                    <div class="grid-item" id="g21" onclick="clickOnItem(2,1)">0</div>
+                    <div class="grid-item" id="g22" onclick="clickOnItem(2,2)">0</div>
+                    <div class="grid-item" id="g23" onclick="clickOnItem(2,3)">0</div>
+                    <div class="grid-item" id="g31" onclick="clickOnItem(3,1)">0</div>
+                    <div class="grid-item" id="g32" onclick="clickOnItem(3,2)">0</div>
+                    <div class="grid-item" id="g33" onclick="clickOnItem(3,3)">0</div>
+                </div>
+                <div class="sub-grid">
+                    <div class="grid-item" id="g14" onclick="clickOnItem(1,4)">0</div>
+                    <div class="grid-item" id="g15" onclick="clickOnItem(1,5)">0</div>
+                    <div class="grid-item" id="g16" onclick="clickOnItem(1,6)">0</div>
+                    <div class="grid-item" id="g24" onclick="clickOnItem(2,4)">0</div>
+                    <div class="grid-item" id="g25" onclick="clickOnItem(2,5)">0</div>
+                    <div class="grid-item" id="g26" onclick="clickOnItem(2,6)">0</div>
+                    <div class="grid-item" id="g34" onclick="clickOnItem(3,4)">0</div>
+                    <div class="grid-item" id="g35" onclick="clickOnItem(3,5)">0</div>
+                    <div class="grid-item" id="g36" onclick="clickOnItem(3,6)">0</div>
+                </div>
+                <div class="sub-grid">
+                    <div class="grid-item" id="g17" onclick="clickOnItem(1,7)">0</div>
+                    <div class="grid-item" id="g18" onclick="clickOnItem(1,8)">0</div>
+                    <div class="grid-item" id="g19" onclick="clickOnItem(1,9)">0</div>
+                    <div class="grid-item" id="g27" onclick="clickOnItem(2,7)">0</div>
+                    <div class="grid-item" id="g28" onclick="clickOnItem(2,8)">0</div>
+                    <div class="grid-item" id="g29" onclick="clickOnItem(2,9)">0</div>
+                    <div class="grid-item" id="g37" onclick="clickOnItem(3,7)">0</div>
+                    <div class="grid-item" id="g38" onclick="clickOnItem(3,8)">0</div>
+                    <div class="grid-item" id="g39" onclick="clickOnItem(3,9)">0</div>
+                </div>
+                <div class="sub-grid">
+                    <div class="grid-item" id="g41" onclick="clickOnItem(4,1)">0</div>
+                    <div class="grid-item" id="g42" onclick="clickOnItem(4,2)">0</div>
+                    <div class="grid-item" id="g43" onclick="clickOnItem(4,3)">0</div>
+                    <div class="grid-item" id="g51" onclick="clickOnItem(5,1)">0</div>
+                    <div class="grid-item" id="g52" onclick="clickOnItem(5,2)">0</div>
+                    <div class="grid-item" id="g53" onclick="clickOnItem(5,3)">0</div>
+                    <div class="grid-item" id="g61" onclick="clickOnItem(6,1)">0</div>
+                    <div class="grid-item" id="g62" onclick="clickOnItem(6,2)">0</div>
+                    <div class="grid-item" id="g63" onclick="clickOnItem(6,3)">0</div>
+                </div>
+                <div class="sub-grid">
+                    <div class="grid-item" id="g44" onclick="clickOnItem(4,4)">0</div>
+                    <div class="grid-item" id="g45" onclick="clickOnItem(4,5)">0</div>
+                    <div class="grid-item" id="g46" onclick="clickOnItem(4,6)">0</div>
+                    <div class="grid-item" id="g54" onclick="clickOnItem(5,4)">0</div>
+                    <div class="grid-item" id="g55" onclick="clickOnItem(5,5)">0</div>
+                    <div class="grid-item" id="g56" onclick="clickOnItem(5,6)">0</div>
+                    <div class="grid-item" id="g64" onclick="clickOnItem(6,4)">0</div>
+                    <div class="grid-item" id="g65" onclick="clickOnItem(6,5)">0</div>
+                    <div class="grid-item" id="g66" onclick="clickOnItem(6,6)">0</div>
+                </div>
+                <div class="sub-grid">
+                    <div class="grid-item" id="g47" onclick="clickOnItem(4,7)">0</div>
+                    <div class="grid-item" id="g48" onclick="clickOnItem(4,8)">0</div>
+                    <div class="grid-item" id="g49" onclick="clickOnItem(4,9)">0</div>
+                    <div class="grid-item" id="g57" onclick="clickOnItem(5,7)">0</div>
+                    <div class="grid-item" id="g58" onclick="clickOnItem(5,8)">0</div>
+                    <div class="grid-item" id="g59" onclick="clickOnItem(5,9)">0</div>
+                    <div class="grid-item" id="g67" onclick="clickOnItem(6,7)">0</div>
+                    <div class="grid-item" id="g68" onclick="clickOnItem(6,8)">0</div>
+                    <div class="grid-item" id="g69" onclick="clickOnItem(6,9)">0</div>
+                </div>
+                <div class="sub-grid">
+                    <div class="grid-item" id="g71" onclick="clickOnItem(7,1)">0</div>
+                    <div class="grid-item" id="g72" onclick="clickOnItem(7,2)">0</div>
+                    <div class="grid-item" id="g73" onclick="clickOnItem(7,3)">0</div>
+                    <div class="grid-item" id="g81" onclick="clickOnItem(8,1)">0</div>
+                    <div class="grid-item" id="g82" onclick="clickOnItem(8,2)">0</div>
+                    <div class="grid-item" id="g83" onclick="clickOnItem(8,3)">0</div>
+                    <div class="grid-item" id="g91" onclick="clickOnItem(9,1)">0</div>
+                    <div class="grid-item" id="g92" onclick="clickOnItem(9,2)">0</div>
+                    <div class="grid-item" id="g93" onclick="clickOnItem(9,3)">0</div>
+                </div>
+                <div class="sub-grid">
+                    <div class="grid-item" id="g74" onclick="clickOnItem(7,4)">0</div>
+                    <div class="grid-item" id="g75" onclick="clickOnItem(7,5)">0</div>
+                    <div class="grid-item" id="g76" onclick="clickOnItem(7,6)">0</div>
+                    <div class="grid-item" id="g84" onclick="clickOnItem(8,4)">0</div>
+                    <div class="grid-item" id="g85" onclick="clickOnItem(8,5)">0</div>
+                    <div class="grid-item" id="g86" onclick="clickOnItem(8,6)">0</div>
+                    <div class="grid-item" id="g94" onclick="clickOnItem(9,4)">0</div>
+                    <div class="grid-item" id="g95" onclick="clickOnItem(9,5)">0</div>
+                    <div class="grid-item" id="g96" onclick="clickOnItem(9,6)">0</div>
+                </div>
+                <div class="sub-grid">
+                    <div class="grid-item" id="g77" onclick="clickOnItem(7,7)">0</div>
+                    <div class="grid-item" id="g78" onclick="clickOnItem(7,8)">0</div>
+                    <div class="grid-item" id="g79" onclick="clickOnItem(7,9)">0</div>
+                    <div class="grid-item" id="g87" onclick="clickOnItem(8,7)">0</div>
+                    <div class="grid-item" id="g88" onclick="clickOnItem(8,8)">0</div>
+                    <div class="grid-item" id="g89" onclick="clickOnItem(8,9)">0</div>
+                    <div class="grid-item" id="g97" onclick="clickOnItem(9,7)">0</div>
+                    <div class="grid-item" id="g98" onclick="clickOnItem(9,8)">0</div>
+                    <div class="grid-item" id="g99" onclick="clickOnItem(9,9)">0</div>
+                </div>
+            </div>
+            <div class="select-container">
+                <div class="select-grid">
+                    <div class="select-item" id="s1" onclick="clickOnSelect(1)">1</div>
+                    <div class="select-item" id="s2" onclick="clickOnSelect(2)">2</div>
+                    <div class="select-item" id="s3" onclick="clickOnSelect(3)">3</div>
+                    <div class="select-item" id="s4" onclick="clickOnSelect(4)">4</div>
+                    <div class="select-item" id="s5" onclick="clickOnSelect(5)">5</div>
+                    <div class="select-item" id="s6" onclick="clickOnSelect(6)">6</div>
+                    <div class="select-item" id="s7" onclick="clickOnSelect(7)">7</div>
+                    <div class="select-item" id="s8" onclick="clickOnSelect(8)">8</div>
+                    <div class="select-item" id="s9" onclick="clickOnSelect(9)">9</div>
+                    <div class="select-item" id="s0" onclick="clickOnSelect(0)">C</div>
+                </div>
+                <div class="control-grid">
+                    <div class="control-item" id="c1" onclick="checkConflict()">Check conflict</div>
+                    <div class="control-item" id="c2" onclick="clearGrid()">Clear All</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sudoku.js"></script>
+</body>
+</html>
